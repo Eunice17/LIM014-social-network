@@ -1,0 +1,187 @@
+/* home */
+.header {
+    background: linear-gradient(to top, #A01A58, #892B64);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+  }
+  .header > .nav-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav-list .logo-nav{
+    height: 100%;
+    padding: 8px 20px;
+  }
+  footer a:hover{
+    color: #1a85a0;
+  }
+  .nav-list .logo-nav >a{
+    height: 100%;
+    color: white;
+    display: block;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: "pacifico", cursive;
+    font-size: 23px;
+  }
+  form .form > a:hover {
+    color: #0091ad;
+  }
+  .nav-list .burger{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .nav-list .burger >div{
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    transition: all .5s ease-in-out;
+  }
+  .nav-list .burger >div::after, 
+  .nav-list .burger >div::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+  .nav-list .burger >div::before{
+    transform: translateY(-6px);
+  }
+  .nav-list .burger >div::after{
+    transform: translateY(6px);
+  }
+  .nav-list .burger.open >div{
+    transform: translateX(-5px);
+    background-color: transparent;
+  }
+  .nav-list .burger.open > div::after{
+    transform: rotate(35deg) translate(5px,-4px);
+  }
+  .nav-list .burger.open > div::before{
+    transform: rotate(-35deg) translate(5px,4px);
+  }
+  .nav-list > ul{
+    position: absolute;
+    width: 100%;
+    top: 56px;
+    right: 0;
+    list-style: none;
+    background: linear-gradient(to top, #5C4D7D, #723C70);
+    clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path .5s  ease-in-out;
+  }
+  .nav-list >ul.open{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .nav-list > ul > li a >span{
+    margin-right: 10px;
+}
+.grid {
+  display: grid;
+  grid-gap: 15px;
+  padding-top: 56px;
+  padding-bottom: 30px;
+}  
+.profile-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+.best-post{
+  display: none;
+}
+.profile-header > .profile{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, hsla(190, 100%, 34%, 0.7), hsla(190, 100%, 34%, 0.8));
+}
+.profile-header > .profile-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.profile-header > .profile-name >h2{
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+.grid > .search{
+  background: #e7e7e7;
+  padding: 20px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 1px 2px 13px -4px rgb(158 158 158);
+  border-radius: 5px;
+}
+.grid >.search .btn-group{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.grid > .search-body{
+  display: grid;
+  width: 100%;
+  grid-gap: 15px;
+  /* padding: 0px 10px; */
+}
+.grid > .search-body > .search{
+  width: 100%;
+  position: relative;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+  border: 1px solid rgb(231, 229, 229);
+  border-radius: 5px;
+}
+.grid > .search-body > .search > input{
+  width: 100%;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  padding: 8px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.grid > .search-body .search>span{
+  height: 100%;
+  background: linear-gradient(to top, #723C70, #892B64);
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0px 20px;
+  border-radius: 0px 5px 5px 0px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.search-body > .buttom-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-body > .buttom-nav button.active{
+  color: white;
+  background-color: hsla(190, 100%, 34%, 0.8);
+}
+.posting-history{
+  margin: 0;
+  display: grid;
+  grid-gap: 15px;
+}

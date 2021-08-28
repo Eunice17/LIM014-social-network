@@ -30,7 +30,7 @@ const Login = (() => {
           </label>
           </div>
           <div class="msg-text"></div>
-        <a href="#/Register">Are you new? sing me</a>
+        <a href="#/Register">Are you new? sign on</a>
         <button type="submit">Log In</button>
       </div>
       <div class="typeLog">

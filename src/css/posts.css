@@ -1,0 +1,133 @@
+.posting{
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 2px 13px -4px rgba(158,158,158,1);
+}
+.posting >.more{
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.more > .img-post{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 0px 0px 20px;
+  text-transform: uppercase;
+}
+.posting >.more >div>img{
+  margin-right: 15px;
+}
+.more-group{
+  display: flex;
+  flex-direction: column;
+}
+.more-group > .more-date{
+  font-size: 10px;  
+  font-weight: lighter;
+}
+.btn-more{
+  padding: 2px 15px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-list{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  font-size: 14px;
+  top: 30px;
+  z-index: 50;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.4);
+}
+.btn-list > button{
+  width: 100%;
+    font-family: 'poppins', sans-serif;
+    cursor: pointer;
+    padding: 5px;
+    background: rgb(241, 240, 240);
+    border: none;
+    outline: none;
+}
+.btn-list.hide{
+  display: none;
+}
+.btn-more:hover{
+  background-color: whitesmoke;
+}
+.posting > .body-posting{
+  padding: 15px 20px;
+}
+.posting .btn-posting{
+  display: flex;
+  flex-direction: column;
+}
+.posting .btn-posting >.btn-total{
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(128, 128, 128);
+  padding-bottom: 3px;
+}
+.btn-posting >.btn-total p{
+  width: 50%;
+  text-align: center;
+}
+.posting .btn-posting > .btn-group{
+  display: flex;
+}
+.omg{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(23, 129, 161, 1);
+  font-weight: bold;
+  background: rgba(23, 129, 161, 0.2);
+  line-height: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+.posting > .show-comments{
+  padding: 15px;
+  transition: .5s;
+}
+.show-comments.show{
+  display: none;
+}
+.show-comments > .area-cm{
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 92% 8%;
+}
+.area-cm textarea{
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  height: 40px;
+  min-width: 40px;
+  resize: none;
+  border: 1px solid rgb(189, 187, 187);
+  outline: none;
+  border-radius: 10px;
+}
+.show-comments > .area-cm > button{
+  padding: 4px;
+  color: rgba(23, 129, 161, 1);
+  background: rgba(23, 129, 161, 0.2);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}

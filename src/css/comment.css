@@ -1,0 +1,8 @@
+.one-cm{
+    position: relative;
+  }
+  .one-cm > .head-cm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

@@ -1,0 +1,23 @@
+.container-change {
+    display: grid;
+    grid-template-columns: 0px 1fr;
+    width: 100%;
+    height: 100vh;
+}
+.container-change.hidden {
+    display: none;
+}
+.container-change .figure-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+}
+.img-login{
+    position: relative;
+}
+.container-change .figure-login > img,
+.container-change .figure-login > p {
+  display: none;
+}

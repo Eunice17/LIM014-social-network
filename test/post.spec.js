@@ -101,12 +101,12 @@ global.firebase = new MockFirebase(fixtureData);
 
 describe('Funciones addPost y getPost', () => {
   it('Debería agregar un post', (done) => {
-    post.addPost('Estoy cansada de lucharle a la vida', '12/02/1997', 'efas@gmail.com', '12345', 'Elisa', 'www.google.com', '12/02/1997 12:20').then(() => {
+    post.addPost('Estoy cansada de comer ceviche', '12/02/1997', 'efas@gmail.com', '12345', 'Elisa', 'www.google.com', '12/02/1997 12:20').then(() => {
       const callback = (publication) => {
         const result = publication.find(
-          (elm) => elm['_data'].publication === ('Estoy cansada de lucharle a la vida'),
+          (elm) => elm['_data'].publication === ('Estoy cansada de comer ceviche'),
         );
-        expect(result['_data'].publication).toBe('Estoy cansada de lucharle a la vida');
+        expect(result['_data'].publication).toBe('Estoy cansada de comer ceviche');
         done();
       };
       post.getPost(callback);
