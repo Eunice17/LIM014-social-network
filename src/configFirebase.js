@@ -1,6 +1,6 @@
 const firebaseConfig = {
   apiKey: 'AIzaSyCRfc-eWKpUS3fTv1aik-GoQYVDPi17iho',
-  authDomain: 'https://eunice17.github.io/LIM014-social-network/',
+  authDomain: 'eunice17.github.io',
   projectId: 'redsocial-b2010',
   storageBucket: 'redsocial-b2010.appspot.com',
   messagingSenderId: '562829868568',
